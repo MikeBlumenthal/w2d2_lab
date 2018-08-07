@@ -33,6 +33,9 @@ def test_drop_off_passenger()
   actual = @No14.head_count
   assert_equal(1, actual)
 end
-
+def test_all_off()
+  @No14.empty_bus
+  assert_equal(0, @No14.head_count)
+end
 
 end

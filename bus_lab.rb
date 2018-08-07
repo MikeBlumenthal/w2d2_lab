@@ -25,5 +25,7 @@ end
 def drop_off(passenger)
   @passengers.delete(passenger)
 end
-
+def empty_bus()
+  @passengers.clear
+end
 end
