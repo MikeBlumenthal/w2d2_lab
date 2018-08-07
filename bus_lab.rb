@@ -16,7 +16,10 @@ end
 
 def head_count()
   return @passengers.length
+end
 
+def pick_up(new_passenger)
+  return @passengers << new_passenger
 end
 
 end
