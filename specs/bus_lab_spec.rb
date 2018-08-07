@@ -28,4 +28,11 @@ def test_pick_up_passenger()
   assert_equal(3, actual)
 end
 
+def test_drop_off_passenger()
+  @No14.drop_off(@passenger2)
+  actual = @No14.head_count
+  assert_equal(1, actual)
+end
+
+
 end

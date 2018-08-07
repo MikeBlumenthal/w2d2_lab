@@ -22,4 +22,8 @@ def pick_up(new_passenger)
   return @passengers << new_passenger
 end
 
+def drop_off(passenger)
+  @passengers.delete(passenger)
+end
+
 end
